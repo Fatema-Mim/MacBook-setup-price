@@ -1,0 +1,10 @@
+#apply-btn{
+    padding: 2px 15px;
+    background: rgba(194, 9, 39, 0.801);
+    border: none;
+    color: #fff;
+
+}
+#varify-fail{
+    display: none;
+}

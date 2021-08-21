@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- boostrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Mac-Book-Pro</title>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-5 p-5">
+                    <img src="images/mac.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h1>
+                        Customize your Blue 24-inch iMac with Apple M1 chip .
+                    </h1>
+                    <p>
+                        Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores , 7-core GPU and 16 core Neural Engine 8GB unified memory 256GB SSD stroge Two Thunderbolt/ USB 4 ports Magic Mouse Keyboard  US English .
+                    </p>
+<!--=============================== product value =========================================================  -->
+                    <div class="memory mt-4 mb-4">
+                        <h4>Memory</h4>
+                        <button type="button" id="memory8gb-cost" class="btn btn-outline-secondary btn-lg">8GB unified memory </button>
+                        <button type="button" id="memory16gb-cost" class="btn btn-outline-secondary btn-lg">16GB unified memory</button>
+                    </div>
+                    <div class="storage mt-4 mb-4">
+                        <h4>Storage</h4>
+                        <button type="button" id="ssd256gb-cost" class="btn btn-outline-secondary btn-lg">256GB SSD storage</button>
+                        <button type="button" id="ssd512gb-cost" class="btn btn-outline-secondary btn-lg">512GB SSD storage</button>
+                        <button type="button" id="ssd1tb-cost" class="btn btn-outline-secondary btn-lg">1TB SSD storage</button>
+                    </div>
+                    <div class="delivery mt-4 mb-4">
+                        <h4>Choose Your Delivery Option</h4>
+                        <button type="button" id="aug25-cost" class="btn btn-outline-secondary btn-lg">Friday,Aug 25 FREE Prime Delivery</button>
+                        <button type="button" id="aug21-cost" class="btn btn-outline-secondary btn-lg">Saturday,Aug 21 FREE Prime Delivery</button>
+                    </div>
+<!-- ============================= costing part ============================================================== -->
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th> Best Price</th>
+                                <td>$ <span id="bestPrice">1299</span> </td>
+                                
+                            </tr>
+                            <tr>
+                                <th>Extra Memory Cost</th>
+                                <td>$ <span id="memory-Cost">0</span> </td>
+                            </tr>
+                            <tr>
+                                <th>Extra Storage Cost</th>
+                                <td>$ <span id="storage-Cost">0</span> </td>
+                            </tr>
+                            <tr>
+                                <th>Delivery Charge</th>
+                                <td>$ <span id="delivery-Cost">0</span> </td>
+                            </tr>
+                             
+                            <tr class="fw-bold">
+                                <th>Total Price</th>
+                                <td>$ <span id="totalCost">1299</span> </td>
+                            </tr>   
+                        </tbody>
+                    </table>
+<!--==================================== promo apply =======================================================  -->
+                    <div class="promocode">
+                        <h3>Add Promo Code</h3>
+                        <input type="text" id="promoValue"> 
+                        <button id="apply-btn">Apply</button>
+                        <p id="varify-fail" class="text-danger"> Promo Didn't Match, Please try again</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+<!--===================================== final costing ======================================================  -->
+        <section class="container">
+            <p class="text-center fs-1 fw-bold">Total: $<span id="finalCost">1299</span> </p>
+        </section>
+    </main>
+
+
+
+
+    <!-- boostrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <!-- custom js  -->
+    <script src="script.js"></script>
+</body>
+</html>
